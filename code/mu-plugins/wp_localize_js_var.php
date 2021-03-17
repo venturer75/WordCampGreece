@@ -8,7 +8,7 @@ function load_scripts() {
    // global JS variables on all pages. Do 'Inspect Source' and find CDATA...
    wp_localize_script( 'wp-rest', 'siteObj',
        array( 
-           'siteUrl'    => 'https://49plus.co.uk/udemy/',
+           'siteUrl'    => 'https://wp-html.co.uk/greece/',
            'wpNonce'    => wp_create_nonce('wp_rest'),
            'filePath'   => get_theme_file_uri() . '/js/test.js'
        )
