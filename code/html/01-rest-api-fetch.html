@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
    <head>
       <title>01-rest-api-fetch</title>
       <meta charset="UTF-8" />
@@ -25,10 +26,7 @@
                   <div class="w3-card-4" style="width: 100%">
                      <div class="w3-container" style="width: 100%">
                         <div class="w3-row">
-                           <div
-                              class="w3-col m12"
-                              style="margin-top: 20px; padding-left: 30px; padding-right: 30px"
-                           >
+                           <div class="w3-col m12" style="margin-top: 20px; padding-left: 30px; padding-right: 30px">
                               <br />
                               <h3>GET JSON FETCH</h3>
                               <div id="mainContent"></div>
@@ -58,9 +56,9 @@
                                        // var clone = response.clone();
                                        console.log('response will have a body stream');
                                        console.log(response);
-                                       // 404 is not an error just no responseult
+                                       // 404 is not an error just no response
                                        if (response.ok) {
-                                          // must have return to pass responseult to next .then
+                                          // must have return to pass response to next .then
                                           return response;
                                        } else {
                                           console.log('ERROR');
@@ -123,4 +121,5 @@
       </main>
       <!-- End Page Container -->
    </body>
+
 </html>

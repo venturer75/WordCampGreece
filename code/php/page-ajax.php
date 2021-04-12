@@ -17,7 +17,7 @@ get_header(); ?>
                     <script>
                         document.write(' <div style="font-size:40px;">AJAX GET</div>');
                     </script>
-                    <!-- <h1 style="font-size:40px;">WordCamp Dublin</h1> -->
+                   
                 </header>
 
                 <div class="w3-container" style="width:100%;">
@@ -88,7 +88,9 @@ get_header(); ?>
                                 // GET MySQL DATA
                                 function loadData() {
                                     // Generate URL
-                                    const url = '<?php echo $SITE; ?>' + 'wp-json/wordcamp/v2/districts';
+                                    // const url = '<?php echo $SITE; ?>' + 'wp-json/wordcamp/v2/districts';
+                                    // TO DEMO USING OTHER SITES API
+                                    const url = 'https://49plus.co.uk/udemy/wp-json/wordcamp/v2/districts';
                                     console.log(url);
                                     fetch(url)
                                         .then(response => {
@@ -99,8 +101,7 @@ get_header(); ?>
                                             // Prints result from `response.json()` in get Request
                                             console.log("DATA", data)
                                             console.log(data.length);
-                                            let outputData = '<?php echo $SITE; ?>' +
-                                                'wp-json/wordcamp/v2/districts';
+                                            let outputData = '<b>https://49plus.co.uk/udemy/</b>wp-json/wordcamp/v2/districts';
                                             outputData +=
                                                 '<table class="w3-table w3-border w3-striped" ><tr><th>ID</th><th>CITY</th></tr>';
                                             for (var i = 0; i < data.length; i++) {

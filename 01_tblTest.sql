@@ -29,8 +29,8 @@ CREATE TABLE `01_tblTest` (
 -- Dumping data for table `01_tblTest`
 --
 INSERT INTO `01_tblTest` (`ID`, `UnitName`) VALUES
-(1, 'London'),
-(2, 'Leeds'),
+(1, 'GREECE'),
+(2, 'UK'),
 (3, 'Paris'),
 (4, 'Athens'),
 (5, 'Manchester');
