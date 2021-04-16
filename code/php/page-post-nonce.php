@@ -93,6 +93,8 @@ get_header(); ?>
                         const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
                         console.log("form nonceValue via PHP: " + nonceValue);
                         // https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/
+                        // If we use wp_localize_script then we can access a global JavaScript object
+                        // See wp_localize_js_var.php in mu-plugins folder.
                         console.log("GLOBAL JS OBJECT: " + siteObj.wpNonce);
 
                         const formData = new FormData();
