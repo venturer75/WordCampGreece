@@ -2,7 +2,7 @@
 
 Create a fresh install of WP
 
-Install 00_LATEST-ALL_IN_ONE_7.17 plugin and update
+Install 00_LATEST-ALL_IN_ONE_7.41 plugin and update if needed
 
 Import wp-greece.wpress file
 
