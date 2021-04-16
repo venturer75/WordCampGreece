@@ -7,8 +7,9 @@ get_header(); ?>
     const rnd =  Math.floor(Math.random() * 100000000000);
     localStorage.setItem("JWT", rnd );
 </script>
-
+<!-- Get site url -->
 <?php include 'server.php'; ?>
+<!-- returns $SITE -->
 <main>
     <div class="w3-container w3-content" style="max-width:1200px;margin-top:10px;border:2px solid #2196f3;border-radius:10px;">
         <div class="w3-row">
