@@ -88,6 +88,7 @@ get_header(); ?>
                         // Must be wp_rest to work 
                         // Either _wpnonce as POST parameter or use headers: { 'X-WP-Nonce': nonceValue} in AJAX
 
+                        // CREATE NONCE TOKEN
                         
                         const nonceValue = '<?php  echo wp_create_nonce('wp_rest'); ?>'; // ! must be wp_rest
                         console.log("form nonceValue via PHP: " + nonceValue);
@@ -98,6 +99,7 @@ get_header(); ?>
                         formData.append('title', title);
                         formData.append('content', data);
                         formData.append('jwt', JWT);
+                        // ***** Add nonce to form data
                         formData.append('_wpnonce', nonceValue); 
                         formData.append('session_id', session_id); 
                         // must use _wpnonce as parameter in POST otherwise headers below must be used
