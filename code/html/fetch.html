@@ -63,12 +63,13 @@
                                        console.log("POSTS", dataArray)
                                        console.log(dataArray.length);
                                        console.log("Number of posts is " + dataArray.length);
-                                       let outputData = 'https://49plus.co.uk/udemy-rest/wp-json/wp-json/wp/v2/posts'; //latest 10 posts
+                                       let outputData = 'https://wp-html.co.uk/greece/wp-json/wp/v2/posts'; //latest 10 posts
 
                                        // JS OUTPUT...
                                        outputData +=
                                           '<table class="w3-table w3-border w3-striped "><tr><th>ID</th><th>TITLE</th></tr>';
                                        for (let i = 0; i < dataArray.length; i++) {
+                                          // dataArray[i].id is shorthand for dataArray[i]['id']
                                           outputData += "<tr><td>" + dataArray[i].id + "</td><td>" + dataArray[i].title.rendered +
                                              "</td></tr>";
                                        }
